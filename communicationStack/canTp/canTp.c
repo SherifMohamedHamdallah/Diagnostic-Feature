@@ -213,7 +213,7 @@ void canTp_vidTxMain()
 			udtpArrOfTxBuff[u8ActiveCh].u16StartIndex+=7;
 			u8SN++;
 			u8SN%=15;
-			if(u8SN%u8BS)
+			if(u8SN%u8BS == 0)
 			{
 				udtTxStateM = waitingFc;
 			}
